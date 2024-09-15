@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
 
+:root {
+    --color-primary-1: #7be266;
+    --color-primary-2: #ffffff;
+    --color-primary-3: #90a70d;
+    --color-primary-4: #5f1515;
+    --color-primary-5: #756a67;
+    --color-primary-6: #C7BAB3;
+    --color-primary-7: #FFF2E7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +17,8 @@
 }
 
 body {
-    background: #7be266;
-    color: #ffffff;
+    background: var(--color-primary-1);
+    color: var(--color-primary-2);
 
 }
 
@@ -25,11 +35,11 @@ ul {
     list-style: none;
 }
 
-nav {
+#navbar {
     max-width: 1120px;
     margin: auto;
-    padding: 1.5rem 8rem;
-    gap: 2em;
+    padding: 1.5rem 3rem;
+    gap: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,22 +51,48 @@ nav {
     font-weight: 500;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #90a70d;
+    color: var(--color-primary-3);
 }
 
-.menu{
+#navbar > #menu {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    color: #5f1515;
 }
 
-.Home {
+.menu-item > a {
+    color: var(--color-primary-4);
+}
+
+.menu-item-home {
     color: #000000;
 }
 
-.GitHub {
+.menu-item-GitHub {
     color: #000000;
+}
+
+.btn-default {
+    width: 7rem;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0.3rem;
+    border: none;
+    
+    align-items: center;
+    
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-primary-3);
+    
+    background: var(--color-primary-4);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: #5f1515d7;
 }
 
 main {
@@ -65,7 +101,7 @@ main {
 }
 
 .principal {
-    background: #5f1515;
+    background: var(--color-primary-4);
 }
 
 .hero {
@@ -76,7 +112,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
+    gap: 10rem;
 
     padding: 0rem 2rem;
     margin: auto;
@@ -91,7 +127,7 @@ main {
 }
 
 .hero-imagens-container {
-    max-width: 60%;
+    max-width: 100%;
     column-count: 4;
     column-gap: 1rem;
     margin: -1rem;
@@ -105,7 +141,7 @@ main {
 }
 
 .marrom {
-    color: #90a70d;
+    color: var(--color-primary-3);
 }
 
 .amarelo {
@@ -114,8 +150,10 @@ main {
 
 .hero-imagens-container > figure > img {
     width: 100%;
+    /* aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20rem; */
     border-radius: 0.3rem;
-
 }
 
 .h1 {
@@ -125,14 +163,14 @@ main {
 }
 
 hr {
-    border-color: #90a70d;
+    border-color: var(--color-primary-3);
 }
 
 .hero-subtitulo {
     font-family: Roboto;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #C7BAB3;
+    color: var(--color-primary-6);
 }
 
 .receitas {
@@ -154,14 +192,14 @@ hr {
     font-family: Roboto;
     font-weight: 700;
     font-size: 2rem;
-    color: #FFF2E7;
+    color: var(--color-primary-7);
 }
 
 .receitas-subtitulo {
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 800;
-    color: #5f1515;
+    color: var(--color-primary-3);
 }
 
 .receitas-card-container {
@@ -173,7 +211,7 @@ hr {
 }
 
 .receitas-card {
-    background: #5f1515;
+    background: var(--color-primary-4);
     padding: 2rem;
     border-radius: 0.5rem;
     display: flex;
@@ -200,21 +238,21 @@ hr {
     font-family: Roboto;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #FFF2E7;
+    color: var(--color-primary-7);
 }
 
 .receita-avaliação {
     font-family: Roboto;
     font-weight: 700;
     font-size: 1rem;
-    color: #756a67;
+    color: var(--color-primary-5);
 }
 
 .receita-descricao {
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 700;
-    color: #C7BAB3;
+    color: var(--color-primary-6);
 }
 
 .receita-autor {
@@ -235,7 +273,7 @@ hr {
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 700;
-    color: #C7BAB3;
+    color: var(--color-primary-6);
 }
 
 footer {
@@ -244,11 +282,11 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    background: #5f1515;
+    background: var(--color-primary-4);
 }
 
 .footer-copy {
-    color: #FFF2E7;
+    color: var(--color-primary-7);
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 700;
