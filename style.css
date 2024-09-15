@@ -29,7 +29,7 @@ nav {
     max-width: 1120px;
     margin: auto;
     padding: 1.5rem 10rem;
-
+    gap: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,14 +41,14 @@ nav {
     font-weight: 500;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #f02842;
+    color: #90a70d;
 }
 
 .menu{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    color: #3b0e0e;
+    color: #5f1515;
 }
 
 .Home {
@@ -65,7 +65,7 @@ main {
 }
 
 .principal {
-    background: #3b0e0e;
+    background: #5f1515;
 }
 
 .hero {
@@ -105,7 +105,7 @@ main {
 }
 
 .marrom {
-    color: #f02842;
+    color: #90a70d;
 }
 
 .amarelo {
@@ -125,7 +125,7 @@ main {
 }
 
 hr {
-    border-color: #f02842;
+    border-color: #90a70d;
 }
 
 .hero-subtitulo {
@@ -161,7 +161,7 @@ hr {
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 800;
-    color: #3b0e0e;
+    color: #5f1515;
 }
 
 .receitas-card-container {
@@ -173,7 +173,7 @@ hr {
 }
 
 .receitas-card {
-    background: #3b0e0e;
+    background: #5f1515;
     padding: 2rem;
     border-radius: 0.5rem;
     display: flex;
@@ -244,7 +244,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    background: #3b0e0e;
+    background: #5f1515;
 }
 
 .footer-copy {
