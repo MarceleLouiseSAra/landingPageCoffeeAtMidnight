@@ -39,7 +39,7 @@ ul {
     max-width: 1120px;
     margin: auto;
     padding: 1.5rem 3rem;
-    gap: 5rem;
+    gap: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,6 +58,7 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    text-transform: uppercase;
 }
 
 .menu-item > a {
@@ -112,7 +113,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10rem;
+    gap: 6rem;
 
     padding: 0rem 2rem;
     margin: auto;
@@ -127,7 +128,7 @@ main {
 }
 
 .hero-imagens-container {
-    max-width: 100%;
+    max-width: 60%;
     column-count: 4;
     column-gap: 1rem;
     margin: -1rem;
@@ -199,7 +200,7 @@ hr {
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 800;
-    color: var(--color-primary-3);
+    color: var(--color-primary-4);
 }
 
 .receitas-card-container {
