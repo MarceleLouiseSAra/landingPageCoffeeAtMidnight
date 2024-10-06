@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
 
 :root {
-    --color-primary-1: #d8c97f;
+    --color-primary-1: #84babf;
     --color-primary-2: #ffffff;
-    --color-primary-3: #8aa010;
-    --color-primary-4: #5a1717;
-    --color-primary-5: #756a67;
-    --color-primary-6: #C7BAB3;
-    --color-primary-7: #FFF2E7;
+    --color-primary-3: #b52a11;
+    --color-primary-4: #06363d;
+    --color-primary-5: #6fa5ba;
+    --color-primary-6: #477f94;
+    --color-primary-7: #e8ebed;
+    --color-primary-8: #ab7552;
 }
 
 * {
@@ -66,11 +67,11 @@ ul {
 }
 
 .menu-item-home {
-    color: #000000;
+    color: var(--color-primary-3);
 }
 
 .menu-item-GitHub {
-    color: #000000;
+    color: var(--color-primary-3);
 }
 
 .btn-default {
@@ -85,7 +86,7 @@ ul {
     font-weight: 700;
     font-size: 1rem;
     
-    background: var(--color-primary-4);
+    background: var(--color-primary-5);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color .3s ease;
@@ -94,9 +95,9 @@ ul {
 }
 
 .btn-default > a {
-    color: var(--color-primary-3);
+    color: var(--color-primary-4);
 }
 
 .btn-default:hover {
-    background-color: #5f1515d7;
+    background-color: var(--color-primary-6);
 }
