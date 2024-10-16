@@ -212,208 +212,156 @@ ul {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-main {
-    background: var(--color-primary-4);
-}
-
-.hero {
-    max-width: 1120px;
-    height: 60vh;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem;
-
-    padding: 0rem 2rem;
-    margin: auto;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.hero-images-container {
-    max-width: 45%;
-    column-count: 4;
-    column-gap: 1rem;
-    margin: -1rem;
-}
-
-.hero-images-container > figure > img {
     width: 100%;
-    border-radius: 0.3rem;
-}
-
-.highlight {
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.brown {
-    color: var(--color-primary-8);
-}
-
-.red {
-    color: var(--color-primary-3);
-}
-
-.hero-title {
-    font-family: Roboto;
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
-hr {
-    border-color: var(--color-primary-3);
-}
-
-.hero-subtitle {
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-primary-7);
-}
-
-.bestSellers {
+    height: 100hv;
     display: flex;
     flex-direction: column;
-    margin-right: auto;
-
-    max-width: 1120px;
-    padding: 3rem 10rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
 }
 
-.bestSellers-header {
+.client-account-container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.client-account-form-img {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary-6)
+}
+
+.client-account-form-img > img {
+    width: 31rem;
+}
+
+.client-account-form {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-8);
+    padding: 5rem;
 }
 
-.bestSellers-header-title {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 2rem;
-    color: var(--color-primary-7);
+.client-account-form-header {
+    margin-bottom: 2rem;
 }
 
-.bestSellers-header-subtitle {
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--color-primary-6);
+.client-account-form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #b52a11;
+    margin: 0 auto;
+    position: absolute;
 }
 
-.bestSellers-card-container {
-    max-width: 100%;
+.client-account-form-input-group {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    column-count: 2;
-    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.bestSellers-card {
-    background: var(--color-primary-4);
-    border-radius: 0.5rem;
-    padding: 1rem 1rem;
-
+.input-box {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-
-    margin-top: 2rem;
+    margin-bottom: 1.1rem;
 }
 
-.bestSellers-card-header {
+.input-box input {
+    margin: 0.6rem 0rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .212)
+}
+
+.input-box input:hover{
+    background-color: var(--color-primary-1);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid var(--color-primary-1)
+}
+
+.input-box label, .gender-inputs-group-title h6 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--color-primary-4)
+}
+
+.input-box input::placeholder {
+    color: var(--color-primary-4);
+}
+
+.gender-group {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10rem;
-    margin-right: auto;
+    margin-top: 0.62rem;
+    padding: 0rem 1rem;
 }
 
-.bestSellers-card-header-details {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.product-name {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--color-primary-7);
-}
-
-.product-grading {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--color-primary-5);
-}
-
-.product-review {
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--color-primary-1);
-    padding: 0rem 2rem;
-}
-
-.product-review-autor {
+.gender-input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
 }
 
-.product-review-autor > img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 2rem;
-    border-radius: 20rem;
+.gender-input input {
+    margin-right: 0.5rem;
 }
 
-.product-review-autor-name {
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--color-primary-5);
+.gender-input label {
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: var(--color-primary-3)
 }
 
-footer {
-    padding: 4rem;
+.client-account-form-continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: var(--);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--color-primary-4);
 }
 
-.footer-copy {
-    color: var(--color-primary-7);
+.login-button button {
+    border: none;
+    background-color: var(--color-primary-1);
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: var(--color-primary-5);
+}
+
+.login-button button a {
+    text-decoration: none;
     font-family: Roboto;
+    font-weight: 900;
     font-size: 1rem;
-    font-weight: 700;
-}
-
-.footer-autor {
-    color: rgba(255, 242, 231, 0.50);
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.footer-autor > a {
-    color: rgba(255, 242, 231, 0.50);
+    color: var(--color-primary-4)
 }
